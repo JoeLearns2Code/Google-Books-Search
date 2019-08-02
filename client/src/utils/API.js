@@ -1,3 +1,4 @@
+//Import axios npm package to make API calls to the server
 import axios from "axios";
 
 export default {
