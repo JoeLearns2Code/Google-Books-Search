@@ -1,5 +1,7 @@
+//Import React.js library
 import React from "react";
 
+//JSX element used for receiving user inputs, triggering handleInputChange & handleFormSubmit functions--properties from parent page components.  "q" is the value entered by user and used for search via API GET request.
 function Form({ q, handleInputChange, handleFormSubmit }) {
   return (
     <form>
@@ -31,4 +33,5 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
   );
 }
 
+//export this component for use on page components
 export default Form;

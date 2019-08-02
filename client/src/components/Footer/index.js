@@ -1,5 +1,7 @@
+//Import React.js library
 import React from "react";
 
+//JSX element to be used on page components
 function Footer() {
   return (
     <footer>
@@ -11,4 +13,5 @@ function Footer() {
   );
 }
 
+//export for use in page components.
 export default Footer;

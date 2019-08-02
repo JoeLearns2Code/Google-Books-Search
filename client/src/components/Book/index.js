@@ -1,8 +1,12 @@
+//Import React.js library
 import React from "react";
+//Import JSX & bootstrap elements
 import { ListItem } from "../List";
 import { Row, Col } from "../Grid";
+//Import style.css from within the Book folder
 import "./style.css";
 
+//Book is the main element used to display the book data received by doing an API call to the Books database.  It takes in the received data as a parameter to return as JSX elements to be displayed on index.html.  The data is displayed where the mongodb field name is encapsulated in {} within the JSX.
 function Book({ title, subtitle, authors, link, description, image, Button }) {
   return (
     <ListItem>
@@ -37,4 +41,5 @@ function Book({ title, subtitle, authors, link, description, image, Button }) {
   );
 }
 
+//export this element to be used on pages
 export default Book;

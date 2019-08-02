@@ -1,5 +1,7 @@
+//Import React.js library
 import React from "react";
 
+//This is a card element to be used on page components.  It inherits {} properties from the Home & Saved page components.
 function Card({ icon, title, children }) {
   return (
     <div className="card mt-4">
@@ -15,4 +17,5 @@ function Card({ icon, title, children }) {
   );
 }
 
+//export for use in page components
 export default Card;
