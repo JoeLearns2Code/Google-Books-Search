@@ -1,12 +1,17 @@
+//Import React.js library
 import React, { Component } from "react";
+//Import method from React
 import { Link } from "react-router-dom";
 import "./style.css";
 
+//Create a class to allow for methods & state changes
+//State includes whether the navbar element containing the page links is open or closed(via "hamburger" button)
 class Nav extends Component {
   state = {
     open: false,
     width: window.innerWidth
   };
+
 
   updateWidth = () => {
     const newState = { width: window.innerWidth };

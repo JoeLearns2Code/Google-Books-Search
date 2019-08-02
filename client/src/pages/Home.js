@@ -52,11 +52,11 @@ class Home extends Component {
     this.getBooks();
   };
 
-  //Function to save querried book data in the saved books database & books array on /saved route.  
+  //Function to save querried book data as a state in the saved books array on /saved route.  
   handleBookSave = id => {
     const book = this.state.books.find(book => book.id === id);
 
-    //Makes a POST request to save the book data as an object to the saved books database
+    //Makes a POST request to save the book data as an object to pass into the book [] state on Saved.js
     API.saveBook({
       googleId: book.id,
       title: book.volumeInfo.title,
@@ -68,7 +68,7 @@ class Home extends Component {
     }).then(() => this.getBooks());
   };
 
-  //render the querried information on index.html page
+  //render the data on index.html page using JSX components and current state data
   render() {
     return (
       <Container>

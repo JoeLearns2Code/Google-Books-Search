@@ -1,3 +1,6 @@
+//This is our MongoDB schema, defining keys and the types of values they will contain.
+
+//Using mongoose npm package to dynamically create a Mongo database
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
@@ -13,4 +16,5 @@ const bookSchema = new Schema({
 
 const Book = mongoose.model("Book", bookSchema);
 
+//This is exported and imported by index.js, which will be used to import all model files(if there were more).
 module.exports = Book;
